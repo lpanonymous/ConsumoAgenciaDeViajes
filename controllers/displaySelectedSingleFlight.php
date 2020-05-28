@@ -11,12 +11,33 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     </head>";
+    $num_infantes = $_POST['num_infantes'];
+    $num_ninos = $_POST['num_ninos'];
+    $num_adultos = $_POST['num_adultos'];
+    $pais_origen = $_POST['pais_origen'];
+    $pais_destino = $_POST['pais_destino'];
+    $ciudad_origen = $_POST['ciudad_origen'];
+    $ciudad_destino = $_POST['ciudad_destino'];
+    $fecha_ida = $_POST['fecha_ida'];
+    $tarifa = $_POST['tarifa'];
+    $tipo_vuelo = $_POST['tipo_vuelo'];
+    
+    $params = array(
+        "numInfantes" => $num_infantes,
+        "numNinos" => $num_ninos,
+        "numAdultos" => $num_adultos,
+        "paisOrigen" => $pais_origen,
+        "paisDestino" => $pais_destino,
+        "ciudadOrigen" => $ciudad_origen,
+        "ciudadDestino" => $ciudad_destino,
+        "fechaSalida" => $fecha_ida,
+    );
     //conexion al sw
     $client = new SoapClient("http://localhost:8080/ws/aerolinea.wsdl");
 
     try
     {
-        $response = $client->__soapCall("DisplayAllSingleFlight", array());
+        $response = $client->__soapCall("ShowSelectedSingleFlight", array($params));
         $respuesta = array_values($response->{'datos'});
         print "<table class='table table-dark' align='center' border='1' style='width:auto; height:20px;'>";
         print "<thead>

@@ -24,7 +24,7 @@
       <nav class="navbar navbar-light" style="background-color: #00e1ffb9;">
         Reservar vuelo
       </nav>
-    <form action="controllers/consumir.php" method="post">
+    <form action="controllers/displaySelectedSingleFlight.php" method="post">
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Tipo de vuelo</label>
@@ -94,7 +94,7 @@
         </div>
         <button class="btn btn-primary" type="submit">Buscar</button>
       </form>
-      <button class="btn btn-primary" onclick="window.location.href = 'controllers/displayAllSingleFlight.php';">Ver vuelos</button>
+      <!--<button class="btn btn-primary" onclick="window.location.href = 'controllers/displaySelectedSingleFlight.php';">Ver vuelos</button>-->
       
     </div>
     <nav class="navbar navbar-light" style="background-color: #00e1ffb9; width: 75%; left: 12.5%;">

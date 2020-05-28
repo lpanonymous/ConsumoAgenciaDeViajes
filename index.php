@@ -22,7 +22,7 @@
     </nav>
     <div class="bg"><div>
       <nav class="navbar navbar-light" style="background-color: #00e1ffb9;">
-        Reservar vuelo
+        Buscar vuelo
       </nav>
     <form action="controllers/displaySelectedSingleFlight.php" method="post">
         <div class="form-row">

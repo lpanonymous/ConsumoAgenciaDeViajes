@@ -22,15 +22,15 @@
     </nav>
     <div class="bg"><div>
       <nav class="navbar navbar-light" style="background-color: #00e1ffb9;">
-        Buscar vuelo
+        Buscar vuelo sencillo
       </nav>
-    <form action="controllers/displaySelectedSingleFlight.php" method="post">
+    <form action="controllers/displaySelectedSingleFlight.php" method="post" autocomplete="off">
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Tipo de vuelo</label>
             <select class="form-control" name="tipo_vuelo" onchange="location = this.value;">
               <option value="Vuelo sencillo">Vuelo sencillo</option>
-                <option value="views/buscarvueloidayvuelta.html">Ida y vuelta</option>
+                <option value="views/buscarvueloidayvuelta.php">Ida y vuelta</option>
             </select>
           </div>
 
@@ -72,12 +72,10 @@
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Ciudad destino</label>
-            <select class="form-control" name="ciudad_destino">
-                <option value="SINALOA">SINALOA</option>
-                <option value="MEXICO">MEXICO</option>
-                <option value="NUEVO LEON">NUEVO LEON</option>
-                <option value="CHIHUAHUA">CHIHUAHUA</option>
-            </select>
+            <div class="autocompletar">
+            
+            <input type="text" class="form-control" id="ciudad-destino" placeholder="Ciudad destino" name="ciudad-destino">
+        </div>
           </div>
 
           <div class="col-md-4 mb-3">
@@ -94,6 +92,7 @@
         </div>
         <button class="btn btn-primary" type="submit">Buscar</button>
       </form>
+      <script src="controllersJS/default.js"></script>
       <!--<button class="btn btn-primary" onclick="window.location.href = 'controllers/displaySelectedSingleFlight.php';">Ver vuelos</button>-->
       
     </div>

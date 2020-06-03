@@ -21,9 +21,9 @@
     </nav>
     <div class="bg"><div>
       <nav class="navbar navbar-light" style="background-color: #00e1ffb9;">
-        Buscar vuelo
+        Buscar vuelo de ida y vuelta
       </nav>
-    <form action="../controllers/consumir.php" method="post">
+    <form action="../controllers/displaySelectedRoundTripFlight.php" method="post">
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Tipo de vuelo</label>
@@ -102,62 +102,58 @@
     <nav class="navbar navbar-light" style="background-color: #00e1ffb9; width: 75%; left: 12.5%;">
       Vuelos disponibles
     </nav>
-    <table class="table table-dark" align="center" border="1" style="width:auto; height:20px;">
-      <thead>
-        <tr align="center">
-          <th scope="col">Pais origen</th>
-          <th scope="col">Pais destino</th>
-          <th scope="col">Ciudad origen</th>
-          <th scope="col">Ciudad destino</th>
-          <th scope="col">Fecha de ida</th>
-          <th scope="col">Fecha de vuelta</th>
-          <th scope="col">Tarifa</th>
-          <th scope="col">Lugares disponibles</th>
+    <?php
+    //conexion al sw
+    $client = new SoapClient("http://localhost:8080/ws/aerolinea.wsdl");
+
+    try
+    {
+        $response = $client->__soapCall("DisplayAllRoundTripFlight", array());
+        $respuesta = array_values($response->{'datos'});
+        print "<table class='table table-dark' align='center' border='1' style='width:auto; height:20px;'>";
+        print "<thead>
+        <tr align='center'>
+          <th scope='col'>Id</th>
+          <th scope='col'>Aerolinea</th>
+          <th scope='col'>Codigo avion</th>
+          <th scope='col'>Fecha de salida</th>
+          <th scope='col'>Fecha de vuelta</th>
+          <th scope='col'>Hora de llegada</th>
+          <th scope='col'>Hora de salida</th>
+          <th scope='col'>Id pais origen</th>
+          <th scope='col'>Id pais destino </th>
+          <th scope='col'>Id ciudad destino </th>
+          <th scope='col'>Id ciudad origen </th>
+          <th scope='col'>Pais origen </th>
+          <th scope='col'>Pais destino </th>
+          <th scope='col'>Ciudad origen </th>
+          <th scope='col'>Ciudad destino </th>
+          <th scope='col'>Lugares disponibles tarifa basica </th>
+          <th scope='col'>Lugares disponibles tarifa clasica </th>
+          <th scope='col'>Lugares disponibles tarifa amplus </th>
+          <th scope='col'>Lugares disponibles tarifa premier </th>
         </tr>
-      </thead>
-      <tbody>
-        <tr align="center">
-          <td>MEXICO</td>
-          <td>MEXICO</td>
-          <td>VERACRUZ</td>
-          <td>SINALOA</td>
-          <td>05/10/2020</td>
-          <td>05/20/2020</td>
-          <td>BASICA</td>
-          <td>20</td>
-        </tr>
-        <tr align="center">
-          <td>MEXICO</td>
-          <td>MEXICO</td>
-          <td>SONORA</td>
-          <td>MEXICO</td>
-          <td>05/20/2020</td>
-          <td>05/30/2020</td>
-          <td>BASICA</td>
-          <td>1</td>
-        </tr>
-        <tr align="center">
-          <td>MEXICO</td>
-          <td>MEXICO</td>
-          <td>PUEBLA</td>
-          <td>NUEVO LEON</td>
-          <td>06/10/2020</td>
-          <td>06/25/2020</td>
-          <td>BASICA</td>
-          <td>19</td>
-        </tr>
-        <tr align="center">
-          <td>MEXICO</td>
-          <td>MEXICO</td>
-          <td>JALISCO</td>
-          <td>CHIHUAHUA</td>
-          <td>05/15/2020</td>
-          <td>05/18/2020</td>
-          <td>BASICA</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
+      </thead>";
+       print "<tbody>";
+        foreach($respuesta as $key => $value)
+        {
+            print "<tr><td>". $value->{'idviv'} . "</td><td>" . $value->{'aerolinea'} . "</td><td>" . $value->{'codigo_avion'} . 
+            "</td><td>" . $value->{'fecha_salida'} . "</td><td>" . $value->{'fecha_vuelta'} . "</td><td>". $value->{'hora_llegada'} . "</td><td>" . $value->{'hora_salida'} . 
+            "</td><td>" . $value->{'idpaisorigen'} . "</td><td>" . $value->{'idpaisdestino'} . "</td><td>" . $value->{'idciudaddestino'} . 
+            "</td><td>" . $value->{'idciudadorigen'} . "</td><td>" . $value->{'paisorigen'} . "</td><td>" . $value->{'paisdestino'} .
+            "</td><td>" . $value->{'ciudadorigen'} . "</td><td>" . $value->{'ciudaddestino'} . "</td><td>" . $value->{'lugaresdisponiblestarifabasica'} .
+            "</td><td>" . $value->{'lugaresdisponiblestarifaclasica'} . "</td><td>" . $value->{'lugaresdisponiblestarifaamplus'} . "</td><td>" . $value->{'lugaresdisponiblestarifapremier'} . "</td>";
+        }
+        print "</tbody>";
+        print "</table>";
+
+        //print_r ($response->{'datos'});
+    }
+    catch (SoapFault $exception) 
+    {
+        echo $exception;      
+    }
+?>
     </div>
     
 </body>

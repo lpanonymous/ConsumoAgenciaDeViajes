@@ -13,3 +13,54 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.autocompletar{
+  position: relative;
+  display: inline-block;
+}
+
+strong{
+  color: black;
+}
+
+#ciudad-destino{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  font-size: 1.0em;
+  padding: 10px 25px;
+  outline: none;
+  width: 440px;
+}
+
+.lista-autocompletar-items{
+  color: #ccc;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  z-index: 99;
+
+  top: 100%;
+  left: 20px;
+  right: 0;
+  width: 93%;
+}
+
+.lista-autocompletar-items div{
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.lista-autocompletar-items div:hover{
+  background-color: dodgerblue;
+}
+
+.autocompletar-active{
+  background-color: dodgerblue !important;
+  color: #a1caff;
+}
+.autocompletar-active strong{
+  color: #fff;
+}

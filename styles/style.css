@@ -23,6 +23,16 @@ strong{
   color: black;
 }
 
+#ciudad-origen{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  font-size: 1.0em;
+  padding: 10px 25px;
+  outline: none;
+  width: 440px;
+}
+
 #ciudad-destino{
   background-color: rgb(255, 255, 255);
   border: 1px solid #d4d4d4;

@@ -10,6 +10,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel = "stylesheet"  href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" >
+    <script  src = "//code.jquery.com/jquery-1.10.2.js" > </script>
+    <script  src = "//code.jquery.com/ui/1.11.4/jquery-ui.js" > </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -63,19 +66,15 @@
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Ciudad origen</label>
-            <select class="form-control" name="ciudad_origen">
-                <option value="VERACRUZ">VERACRUZ</option>
-                <option value="SONORA">SONORA</option>
-                <option value="PUEBLA">PUEBLA</option>
-                <option value="JALISCO">JALISCO</option>
-            </select>
+            <div class="autocompletar">
+              <input type="text" class="form-control" id="ciudad-origen" placeholder="Ciudad origen" name="ciudad-origen">
+            </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationServer01">Ciudad destino</label>
             <div class="autocompletar">
-            
-            <input type="text" class="form-control" id="ciudad-destino" placeholder="Ciudad destino" name="ciudad-destino">
-        </div>
+              <input type="text" class="form-control" id="ciudad-destino" placeholder="Ciudad destino" name="ciudad-destino">
+            </div>
           </div>
 
           <div class="col-md-4 mb-3">

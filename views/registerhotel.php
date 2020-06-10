@@ -41,11 +41,10 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">Registrar cliente</a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="registerhotel.php">Registrar cliente <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item active">
             <a class="nav-link" href="reserveroom.php">Reservar habitación <span class="sr-only">(current)</span></a>
           </li>
@@ -70,5 +69,36 @@
         </ul>
       </div>
 </nav>
+<div class="login-form">
+    <form action="../controllers/registerhotel.php" method="post">
+        <h2 class="text-center">Registro de cliente</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Usuario" required="required" name="usuario">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña" required="required" name="contrasena">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nombre" required="required" name="nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Apellido" required="required" name="apellido">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Correo" required="required" name="correo">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Telefono" required="required" name="telefono">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>        
+    </form>
+    <p class="text-center"><a href="#">Registrarse</a></p>
+</div>
 </body>
 </html>

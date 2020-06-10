@@ -41,9 +41,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">Disponibilidad de habitación</a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+        <li class="nav-item active">
             <a class="nav-link" href="registerhotel.php">Registrar cliente <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
@@ -51,9 +53,6 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="payreservation.php">Pagar reservación <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="roomavailability.php">Disponibilidad de habitación<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="editclient.php">Editar cliente<span class="sr-only">(current)</span></a>
@@ -70,5 +69,16 @@
         </ul>
       </div>
 </nav>
+<div class="login-form">
+    <form action="../controllers/roomavailability.php" method="post">
+        <h2 class="text-center">Disponibilidad</h2>       
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Número de habitación" required="required" name="num_habitacion">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Buscar</button> 
+        </div>
+    </form>
+</div>
 </body>
 </html>

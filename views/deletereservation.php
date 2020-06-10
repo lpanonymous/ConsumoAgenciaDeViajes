@@ -41,9 +41,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">Eliminar reservación</a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+        <li class="nav-item active">
             <a class="nav-link" href="registerhotel.php">Registrar cliente <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
@@ -64,11 +66,22 @@
           <li class="nav-item active">
             <a class="nav-link" href="deleteclient.php">Eliminar cliente<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="deletereservation.php">Eliminar reservación <span class="sr-only">(current)</span></a>
-          </li>
         </ul>
       </div>
 </nav>
+<div class="login-form">
+    <form action="../controllers/deletereservation.php" method="post">
+        <h2 class="text-center">Reservación</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Usuario" required="required" name="usuario">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Número de reservación" required="required" name="num_reservacion">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Eliminar</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>

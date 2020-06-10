@@ -41,9 +41,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">Editar cliente</a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+        <li class="nav-item active">
             <a class="nav-link" href="registerhotel.php">Registrar cliente <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
@@ -54,9 +56,6 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="roomavailability.php">Disponibilidad de habitación<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="editclient.php">Editar cliente<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="showcustomerinfo.php">Información de cliente <span class="sr-only">(current)</span></a>
@@ -70,5 +69,31 @@
         </ul>
       </div>
 </nav>
+<div class="login-form">
+    <form action="../controllers/editclient.php" method="post">
+        <h2 class="text-center">Editar cliente</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Usuario" required="required" name="usuario">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña" required="required" name="contrasena">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nombre" required="required" name="nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Apellido" required="required" name="apellido">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Correo" required="required" name="correo">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Telefono" required="required" name="telefono">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Actualizar información</button>
+        </div>      
+    </form>
+</div>
 </body>
 </html>

@@ -39,36 +39,50 @@
     $tarifa = $_POST['tarifa'];
     $beneficios_tarifa = $_POST['beneficios_tarifa'];
     $total = $_POST['total'];
-        print "<form action='processpayment.php' method='post'>
-                <div class='form-group' align='center'>
-                    <input name='idvuelo' type='number' value='{$id_vuelo}' style='display:none' >
-                    <div class='col-sm-4'>
-                        <input type='text' class='form-control' id='validationDefault01' placeholder='Nombre cliente' name='nombre_cliente' value='Pablo Reyes'>
-                    </div>
-                    <div class='col-sm-4'>
-                        <input type='number' class='form-control' id='validationDefault01' placeholder='Numero de tarjeta' name='numero_tarjeta' value='3250000000000000' required min='3250000000000000' max='5499999999999999'>
-                    </div>
-                    <div class='col-sm-4'>
-                        <input type='text' class='form-control' id='validationDefault01' placeholder='Fecha de vencimiento' name='fecha_vencimiento' value='11/24'>
-                    </div>
-                    <div class='col-sm-4'>
-                        <input type='number' class='form-control' id='validationDefault01' placeholder='Código CVC' name='codigo_cvc' value=123>
-                    </div>
-                    <div class='col-sm-4'>
-                        <input type='number' class='form-control' id='validationDefault01' placeholder='{$total}' name='cantidad' value='{$total}' disabled>
-                        <input name='cantidad' type='number' value='{$total}' style='display:none'>
-                    </div>
-                    <input name='num_infantes' type='number' value='{$num_infantes}' style='display:none' >
-                    <input name='num_ninos' type='number' value='{$num_ninos}' style='display:none' >
-                    <input name='num_adultos' type='number' value='{$num_adultos}' style='display:none' >
-                    <input name='ciudad_origen' type='text' value='{$ciudad_origen}' style='display:none' >
-                    <input name='ciudad_destino' type='text' value='{$ciudad_destino}' style='display:none' >
-                    <input name='fecha_salida' type='text' value='{$fecha_salida}' style='display:none' >
-                    <input name='tarifa' type='text' value='{$tarifa}' style='display:none' >
-                    <input name='beneficios_tarifa' type='text' value='{$beneficios_tarifa}' style='display:none' >
-                    <button class='btn btn-primary' type='submit'>Pagar</button>
-                </div>
-               </form>";
+        print "<div class='col-sm-4'>
+        <div class='card text-white bg-dark mb-3' style='opacity:0.9'>
+        <div class='card-header'>Datos</div>
+          <div class='card-body'>
+        <form action='processpayment.php' method='post'>
+        <div class='form-group'>
+            <input name='idvuelo' type='number' value='{$id_vuelo}' style='display:none' >
+            <div class='col-md-12 mb-0'>
+                <label for='validationServer01' class='label'>Nombre cliente</label>
+                <input type='text' class='form-control' id='validationDefault01' placeholder='Nombre cliente' name='nombre_cliente' value='Pablo Reyes'>
+            </div>
+            <div class='col-md-12 mb-0'>
+                <label for='validationServer01' class='label'>Número de tarjeta</label>
+                <input type='number' class='form-control' id='validationDefault01' placeholder='Numero de tarjeta' name='numero_tarjeta' value='3250000000000000' required min='3250000000000000' max='5499999999999999'>
+            </div>
+            <div class='col-md-12 mb-0'>
+                <label for='validationServer01' class='label'>Fecha de vencimiento</label>
+                <input type='text' class='form-control' id='validationDefault01' placeholder='Fecha de vencimiento' name='fecha_vencimiento' value='11/24'>
+            </div>
+            <div class='col-md-12 mb-0'>
+                <label for='validationServer01' class='label'>Codigo CVC</label>
+                <input type='number' class='form-control' id='validationDefault01' placeholder='Código CVC' name='codigo_cvc' value=123>
+            </div>
+            <div class='col-md-12 mb-4'>
+                <label for='validationServer01' class='label'>Total</label>
+                <input type='number' class='form-control' id='validationDefault01' placeholder='{$total}' name='cantidad' value='{$total}' disabled>
+                <input name='cantidad' type='number' value='{$total}' style='display:none'>
+            </div>
+            <input name='num_infantes' type='number' value='{$num_infantes}' style='display:none' >
+            <input name='num_ninos' type='number' value='{$num_ninos}' style='display:none' >
+            <input name='num_adultos' type='number' value='{$num_adultos}' style='display:none' >
+            <input name='ciudad_origen' type='text' value='{$ciudad_origen}' style='display:none' >
+            <input name='ciudad_destino' type='text' value='{$ciudad_destino}' style='display:none' >
+            <input name='fecha_salida' type='text' value='{$fecha_salida}' style='display:none' >
+            <input name='tarifa' type='text' value='{$tarifa}' style='display:none' >
+            <input name='beneficios_tarifa' type='text' value='{$beneficios_tarifa}' style='display:none' >
+            <div class='col-md-12 mb-0' align='right'>
+            <button class='btn btn-primary' type='submit'>Pagar</button>
+            </div>
+        </div>
+       </form>
+        </div>
+      </div>
+      </div>";
     ?>
 </body>
 </html>

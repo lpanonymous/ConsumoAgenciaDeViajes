@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     width: 100%;
-    background-image: url("../resources/images/avion5.jpg");
+    background-image: url("../resources/images/avion1.jpg");
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -31,7 +31,7 @@ strong{
   font-size: 1.0em;
   padding: 10px 25px;
   outline: none;
-  width: 440px;
+ 
 }
 
 #ciudad-destino{
@@ -41,7 +41,7 @@ strong{
   font-size: 1.0em;
   padding: 10px 25px;
   outline: none;
-  width: 440px;
+  
 }
 
 .lista-autocompletar-items{

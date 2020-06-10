@@ -66,6 +66,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="deleteclient.php">Eliminar cliente<span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.php">Aerolinea <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
       </div>
 </nav>

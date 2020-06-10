@@ -55,7 +55,7 @@
         print "<div id='table' class='table-responsive-sm'>";
         print "<table class='table table-dark' border='1' style='width:auto; height:20px; position: absolute;
         left: 12.5%;
-        top: 30%;
+        top: 30%; opacity:0.9;
         '>";
         print "<thead>
         <tr align='center'>

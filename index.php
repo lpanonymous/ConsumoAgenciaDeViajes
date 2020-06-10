@@ -30,50 +30,55 @@
         </ul>
       </div>
     </nav>
-    <form action="controllers/displaySelectedSingleFlight.php" method="post" autocomplete="off">
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
+
+    <div class="col-sm-4">
+    <div class="card text-white bg-dark mb-3" style="left:0%; top:0%; opacity: 0.9;">
+    <div class="card-header">Vuelos</div>
+      <div class="card-body">
+      <form action="controllers/displaySelectedSingleFlight.php" method="post" autocomplete="off">
+        <div class="form-group">
+          <div class="col-md-12 mb-0">
             <label for="validationServer01" class="label">Tipo de vuelo</label>
             <select class="form-control" name="tipo_vuelo" onchange="location = this.value;">
               <option value="Vuelo sencillo">Vuelo sencillo</option>
-                <option value="views/buscarvueloidayvuelta.php">Ida y vuelta</option>
             </select>
           </div>
 
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-0">
             <label for="validationDefault01" class="label">Número de infantes</label>
             <input type="number" class="form-control" id="validationDefault01" placeholder="Numero de infantes" value="0" required min="0" max="5" name="num_infantes">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-0">
             <label for="validationDefault01" class="label">Número de niños</label>
             <input type="number" class="form-control" id="validationDefault01" placeholder="Numero de niños" value="0" required min="0" max="5" name="num_ninos">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-0">
             <label for="validationDefault01" class="label">Número de adultos</label>
             <input type="number" class="form-control" id="validationDefault01" placeholder="Numero de adultos" value="0" required min="0" max="5" name="num_adultos">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-0">
             <label for="validationServer01" class="label">Ciudad origen</label>
-            <div class="autocompletar">
               <input type="text" class="form-control" id="ciudad-origen" placeholder="Ciudad origen" name="ciudad-origen">
-            </div>
-        </div>
-        <div class="form-row">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-0">
             <label for="validationServer01" class="label">Ciudad destino</label>
-            <div class="autocompletar">
               <input type="text" class="form-control" id="ciudad-destino" placeholder="Ciudad destino" name="ciudad-destino">
-            </div>
           </div>
 
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-4">
             <label for="validationDefault01" class="label">Fecha de ida</label>
             <input type="date" class="form-control" id="validationDefault01" name=fecha_ida>
           </div>
+
+          <div class="col-md-12 mb-0" align="right">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </div>
         </div>
-        <button class="btn btn-primary" type="submit">Buscar</button>
       </form>
+      </div>
+    </div>
+  </div>
+</div>
       <script src="controllersJS/default.js"></script>
       <!--<button class="btn btn-primary" onclick="window.location.href = 'controllers/displaySelectedSingleFlight.php';">Ver vuelos</button>-->
       

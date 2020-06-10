@@ -43,79 +43,81 @@
         $num_pasajeros = $num_ninos + $num_adultos;
         $total = $precio * $num_pasajeros;
 
-        print "<form action='paymentmethod.php' method='post'>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Id vuelo</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='number' placeholder='{$id_vuelo}' disabled>
-                            <input name='idvuelo' type='number' value='{$id_vuelo}' style='display:none'>
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Número de infantes</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_infantes}' disabled>
-                            <input name='num_infantes' type='number' value='{$num_infantes}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Número de niños</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_ninos}' disabled>
-                            <input name='num_ninos' type='number' value='{$num_ninos}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Número de adultos</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_adultos}' disabled>
-                            <input name='num_adultos' type='number' value='{$num_adultos}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Ciudad origen</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='text' placeholder='{$ciudad_origen}' disabled>
-                            <input name='ciudad_origen' type='text' value='{$ciudad_origen}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Ciudad destino</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='text' placeholder='{$ciudad_destino}' disabled>
-                            <input name='ciudad_destino' type='text' value='{$ciudad_destino}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Fecha de salida</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='text' placeholder='{$fecha_salida}' disabled>
-                            <input name='fecha_salida' type='text' value='{$fecha_salida}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Tarifa</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='text' placeholder='{$tarifa}' disabled>
-                            <input name='tarifa' type='text' value='{$tarifa}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Beneficios tarifa</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='text' placeholder='{$beneficios_tarifa}' disabled>
-                            <input name='beneficios_tarifa' type='text' value='{$beneficios_tarifa}' style='display:none' >
-                        </div>
-                    </div>
-                    <div class='form-group row'>
-                        <label for='colFormLabel' class='col-sm-2 col-form-label' style='color:#ffffff';>Total</label>
-                        <div class='col-sm-4'>
-                            <input class='form-control' id='disabledInput' type='number' placeholder='{$total}' disabled>
-                            <input name='total' type='number' value='{$total}' style='display:none'>
-                        </div>
-                    </div>
-                    <button class='btn btn-primary' type='submit'>Pagar</button>
-               </form>";
-    ?>
+print "<div class='row' >
+        <div class='card text-white bg-dark mb-3' style='opacity:0.9'>
+        <div class='card-header'>Detalle</div>
+        <div class='card-body'>
+        <form action='paymentmethod.php' method='post'>
+        <div class='form-row'>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Id vuelo</label>
+            <input class='form-control' id='disabledInput' type='number' placeholder='{$id_vuelo}' disabled>
+            <input name='idvuelo' type='number' value='{$id_vuelo}' style='display:none'>
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Número de infantes</label>
+            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_infantes}' disabled>
+            <input name='num_infantes' type='number' value='{$num_infantes}' style='display:none' >
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Número de niños</label>
+            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_ninos}' disabled>
+            <input name='num_ninos' type='number' value='{$num_ninos}' style='display:none' >
+            </div>
+        </div>
+        <div class='form-row'>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Número de adultos</label>
+            <input class='form-control' id='disabledInput' type='number' placeholder='{$num_adultos}' disabled>
+            <input name='num_adultos' type='number' value='{$num_adultos}' style='display:none' >
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Ciudad origen</label>
+            <input class='form-control' id='disabledInput' type='text' placeholder='{$ciudad_origen}' disabled>
+            <input name='ciudad_origen' type='text' value='{$ciudad_origen}' style='display:none' >
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Ciudad destino</label>
+            <input class='form-control' id='disabledInput' type='text' placeholder='{$ciudad_destino}' disabled>
+            <input name='ciudad_destino' type='text' value='{$ciudad_destino}' style='display:none' >
+            </div>
+        </div>
+        <div class='form-row'>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Fecha de salida</label>
+            <input class='form-control' id='disabledInput' type='text' placeholder='{$fecha_salida}' disabled>
+            <input name='fecha_salida' type='text' value='{$fecha_salida}' style='display:none' >
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Tarifa</label>
+            <input class='form-control' id='disabledInput' type='text' placeholder='{$tarifa}' disabled>
+            <input name='tarifa' type='text' value='{$tarifa}' style='display:none' >
+            </div>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Beneficios tarifa</label>
+            <input class='form-control' id='disabledInput' type='text' placeholder='{$beneficios_tarifa}' disabled>
+            <input name='beneficios_tarifa' type='text' value='{$beneficios_tarifa}' style='display:none' >
+            </div>
+        </div>
+
+        <div class='form-row'>
+            <div class='col-md-4 mb-3'>
+            <label for='validationDefault01'>Total</label>
+            <input class='form-control' id='disabledInput' type='number' placeholder='{$total}' disabled>
+            <input name='total' type='number' value='{$total}' style='display:none' >
+            </div>
+        </div>
+        <div class='col-md-12 mb-0' align='right'>
+        <button class='btn btn-primary' type='submit'>Pagar</button>
+            </div>
+        
+        </form>
+        </div>
+        </div>
+        </div>"
+        ;
+?>
+
+    
 </body>
 </html>

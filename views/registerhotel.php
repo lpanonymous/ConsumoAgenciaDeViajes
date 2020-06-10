@@ -66,6 +66,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="deletereservation.php">Eliminar reservación <span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.php">Aerolinea <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
       </div>
 </nav>
@@ -92,13 +95,8 @@
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
-        </div>
-        <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            <a href="#" class="pull-right">Forgot Password?</a>
-        </div>        
+        </div>   
     </form>
-    <p class="text-center"><a href="#">Registrarse</a></p>
 </div>
 </body>
 </html>

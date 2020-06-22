@@ -20,15 +20,15 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Aerolinea soap</a>
+      <a class="navbar-brand" href="#">Aerolinea rest</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="views/hotel.php">Hotel soap<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="views/hotel.php">Hotel rest<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="indexrest.php">Rest<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Soap<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -38,7 +38,7 @@
     <div class="card text-white bg-dark mb-3" style="left:0%; top:0%; opacity: 0.9;">
     <div class="card-header">Vuelos</div>
       <div class="card-body">
-      <form action="controllers/displaySelectedSingleFlight.php" method="post" autocomplete="off">
+      <form action="controllers/displaySelectedSingleFlightRest.php" method="post" autocomplete="off">
         <div class="form-group">
           <div class="col-md-12 mb-0">
             <label for="validationServer01" class="label">Tipo de vuelo</label>

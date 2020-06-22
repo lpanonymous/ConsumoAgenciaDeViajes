@@ -36,21 +36,9 @@
     $ciudad_destino = $_POST['ciudad-destino'];
     $fecha_ida = $_POST['fecha_ida'];
     $tipo_vuelo = $_POST['tipo_vuelo'];
-    
-    $params = array(
-        "num_infantes" => $num_infantes,
-        "num_ninos" => $num_ninos,
-        "num_adultos" => $num_adultos,
-        "ciudad_origen" => $ciudad_origen,
-        "ciudad_destino" => $ciudad_destino,
-        "fecha_salida" => $fecha_ida,
-    );
-    //conexion al sw
-    $client = new SoapClient("http://localhost:8080/ws/aerolinea.wsdl");
 
-    try
-    {
-        $response = $client->__soapCall("ShowSelectedFlight", array($params));
+      $response = file_get_contents("http://localhost:8080/mostrar-vuelos-seleccionados/?co={$ciudad_origen}&cd={$ciudad_destino}&fs={$fecha_ida}");
+      $response = json_decode($response);
         print "<div id='table' class='table-responsive-sm'>";
         print "<table class='table table-dark' border='1' style='width:auto; height:20px; position: absolute;
         left: 12.5%;
@@ -149,11 +137,6 @@
         print "</div>";
 
         //print_r ($response->{'datos'});
-    }
-    catch (SoapFault $exception) 
-    {
-        echo $exception;      
-    }
 ?>
 </body>
 </html>

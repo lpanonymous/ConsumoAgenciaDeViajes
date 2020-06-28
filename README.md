@@ -22,6 +22,8 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/index.JPG)
 
 ## Ejecutando las pruebas ⚙️
+## Aerolinea y banco
+##Funciones
 ### 1.-Buscar un vuelo
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/buscarvuelo.JPG)
 ### 2.-Mostrar vuelo
@@ -32,6 +34,32 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/metodopago.JPG)
 ### 5.-Detalles de le reservación
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/detallesreservacion.JPG)
+
+## Hotel
+##Funciones
+### 1.-Registrar cliente
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/registrarcliente.JPG)
+### 2.-Reservar habitación
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/reservarhabitacion.JPG)
+
+### 3.-Pagar reservación
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/pagarreservacion.JPG)
+
+### 4.-Disponiblidad de habitación
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/disponibilidadhabitacion.JPG)
+
+### 5.-Editar cliente
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/editarcliente.JPG)
+
+### 6.-Información de cliente
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/informacioncliente.JPG)
+
+### 7.-Eliminar cliente
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/eliminarcliente.JPG)
+
+### 8.-Eliminar reservación
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/eliminarreservacion.JPG)
+
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
@@ -41,7 +69,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Versionado 📌
 
-Usamos [GitHub](https://github.com/lpanonymous/ConsumoAeroline.git) para el versionado.
+Usamos [GitHub](https://github.com/lpanonymous/ConsumoAgenciaDeViajes.git) para el versionado.
 
 ## Autores ✒️
 

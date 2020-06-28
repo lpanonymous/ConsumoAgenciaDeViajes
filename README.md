@@ -46,7 +46,7 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/pagarreservacion.JPG)
 
 ### 4.-Disponiblidad de habitación
-![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/disponibilidadhabitacion.JPG)
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/disponibilidad.JPG)
 
 ### 5.-Editar cliente
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/editarcliente.JPG)

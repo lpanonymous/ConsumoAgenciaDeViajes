@@ -22,18 +22,16 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/index.JPG)
 
 ## Ejecutando las pruebas ⚙️
-### 1.-Soap
-
-![alt text](https://github.com/lpanonymous/ConsumoAerolinea/blob/master/resources/mostrarvuelos.JPG)
-
-![alt text](https://github.com/lpanonymous/ConsumoAerolinea/blob/master/resources/mostrarreservaciones.JPG)
-
-### 2.-Rest
-
-![alt text](https://github.com/lpanonymous/ConsumoAerolinea/blob/master/resources/mostrarvuelosrest.JPG)
-
-![alt text](https://github.com/lpanonymous/ConsumoAerolinea/blob/master/resources/mostrarreservacionesrest.JPG)
-
+### 1.-Buscar un vuelo
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/buscarvuelo.JPG)
+### 2.-Mostrar vuelo
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/mostrarvuelo.JPG)
+### 3.-Mostrar detalles de la tarifa
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/detallestarifa.JPG)
+### 4.-Metodo de pago
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/metodopago.JPG)
+### 5.-Detalles de le reservación
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/detallesreservacion.JPG)
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_

@@ -1,8 +1,8 @@
-# ConsumoAerolinea
-Consumo del servicio web aerolinea.
+# Consumo Agencia de viajes
+Consumo del servicio web aerolinea, hotel y banco.
 
 ## Comenzando 🚀
-Este repositorio tiene la finalidad de consumir el servicio web soap y rest de una aerolinea.
+Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel y banco.
 
 ### Pre-requisitos 📋
 ```
@@ -12,13 +12,14 @@ Este repositorio tiene la finalidad de consumir el servicio web soap y rest de u
 
 ### Instalación 🔧
 ```
-1.-Descomprimir el proyecto descargado.
-2.-Abrir Xampp y habilitar los puertos de apache y mysql.
-3.-En la carpeta de xampp dentro de la carpeta htdocs ingresar el proyecto descomprimido.
-4.-En el navegador de su preferencia ingresar la siguiente dirección "http://localhost/ConsumoAerolinea/".
-5.-Y se desplegara la siguiente pagina.
+1.-Descargar el siguiente servicio web https://github.com/lpanonymous/Aerolinea.git.
+2.-Descomprimir el proyecto descargado.
+3.-Abrir Xampp y habilitar los puertos de apache y mysql.
+4.-En la carpeta de xampp dentro de la carpeta htdocs ingresar el proyecto descomprimido.
+5.-En el navegador de su preferencia ingresar la siguiente dirección "http://localhost/ConsumoAgenciaDeViajes/".
+6.-Y se desplegara la siguiente pagina.
 ```
-![alt text](https://github.com/lpanonymous/ConsumoAerolinea/blob/master/resources/index.JPG)
+![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/index.JPG)
 
 ## Ejecutando las pruebas ⚙️
 ### 1.-Soap

@@ -23,7 +23,7 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 
 ## Ejecutando las pruebas ⚙️
 ## Aerolinea y banco
-##Funciones
+## Funciones
 ### 1.-Buscar un vuelo
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/buscarvuelo.JPG)
 ### 2.-Mostrar vuelo
@@ -36,7 +36,7 @@ Este repositorio tiene la finalidad de consumir el servicio web aerolinea, hotel
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/detallesreservacion.JPG)
 
 ## Hotel
-##Funciones
+## Funciones
 ### 1.-Registrar cliente
 ![alt text](https://github.com/lpanonymous/ConsumoAgenciaDeViajes/blob/master/resources/images/registrarcliente.JPG)
 ### 2.-Reservar habitación
